@@ -9,3 +9,5 @@ LABEL Description="This image is used to start the foobar executable" Vendor="AC
 RUN yum -y update
 RUN yum -y install nano openssh-server wget perl
 RUN chkconfig sshd on
+
+EXPOSE 22
