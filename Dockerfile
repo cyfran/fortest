@@ -16,4 +16,4 @@ RUN chmod +x /*.sh
 ENV AUTHORIZED_KEYS **None**
 
 EXPOSE 22
-CMD ["/run.sh"]
+
