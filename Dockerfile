@@ -1,6 +1,6 @@
 # Nginx
 #
-# VERSION               0.0.2
+# VERSION               0.0.3
 
 FROM      centos:6.6
 MAINTAINER Fortest <fortest@gor.com>
@@ -10,4 +10,10 @@ RUN yum -y update
 RUN yum -y install nano openssh-server wget perl
 RUN chkconfig sshd on
 
+ADD run.sh /run.sh
+RUN chmod +x /*.sh
+
+ENV AUTHORIZED_KEYS **None**
+
 EXPOSE 22
+CMD ["/run.sh"]
