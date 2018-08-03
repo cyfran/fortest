@@ -1,6 +1,6 @@
 # Nginx
 #
-# VERSION               0.0.4
+# VERSION               0.0.5
 
 FROM      centos:6.6
 MAINTAINER Fortest <fortest@gor.com>
